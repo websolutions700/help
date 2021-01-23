@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block content %}
+	
+	<p class="title">Help App</p>
+
+	<div class="controls">
+		<a href="{{url_for('help')}}">
+			<button>Ask for help</button>
+		</a>
+		<a href="{{url_for('survey')}}">
+			<button>PDNA survey</button>
+		</a>
+	</div>
+
+{% endblock %}

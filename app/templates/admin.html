@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+	
+	<p class="title">Admin Panel</p>
+	
+	<div class="help-data">
+		
+		{% for data in help_data %}
+			<p>{{data}}</p>
+		{% endfor %}
+
+	</div>
+
+
+	<div class="pdna-data">
+		{% for data in pdna_data %}
+			<p>{{data}}</p>
+		{% endfor %}
+	</div>
+
+{% endblock %}
